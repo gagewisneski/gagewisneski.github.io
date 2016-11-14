@@ -52,7 +52,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">History</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -66,14 +66,15 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('http://diveprice.com/wp-content/uploads/2016/04/south-guilin.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <h1>Gage Wisneski</h1>
                         <hr class="small">
-                        <span class="subheading">A Website About a Wonderful Person</span>
+                        <span class="subheading">A History About a Wonderful Person</span>
+                        <span class="subheading">This picture has nothing tho do with me</span>
                     </div>
                 </div>
             </div>
@@ -85,59 +86,56 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="about.html">
                         <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
+                            Gage joined Actualize to learn web development
                         </h2>
                         <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
+                            He joined to gain knowledge to find a job he likes
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                    <p class="post-meta">Posted by <a href="#">A Random Dude</a> on October 30, 2016</p>
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="about.html">
                         <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                            Gage became a substitue teacher because he has no idea what he wants to do with his life
                         </h2>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
+                    <p class="post-meta">Posted by <a href="#">That One Guy</a> on September 18, 2015</p>
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="about.html">
                         <h2 class="post-title">
-                            Science has not yet mastered prophecy
+                            Gage graduates from Cal Poly!!!!
                         </h2>
                         <h3 class="post-subtitle">
-                            We predict too much for the next year and yet far too little for the next ten.
+                            He graduated with a degree in Business Administration with a concentration in Information Systems.
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
+                    <p class="post-meta">Posted by <a href="#">Ash Williams</a> on June 12, 2014</p>
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="about.html">
                         <h2 class="post-title">
-                            Failure is not an option
+                            Gage Chooses to go to Cal Poly!!!!!
                         </h2>
                         <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                            After months of anticipation the Great One named Gage has finally chosen a college.
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
+                    <p class="post-meta">Posted by <a href="#">Jamal Crawford</a> on December 18, 2010</p>
                 </div>
                 <hr>
                 <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
+
+    <div id="container" style="width:100%; height:400px;"></div>
 
     <hr>
 
@@ -148,26 +146,10 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/gage.wisneski">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
@@ -190,6 +172,36 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+    <script>
+        $(function () { 
+            var myChart = Highcharts.chart('container', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'Fruit Consumption'
+                },
+                xAxis: {
+                    categories: ['Apples', 'Bananas', 'Oranges']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Fruit eaten'
+                    }
+                },
+                series: [{
+                    name: 'Jane',
+                    data: [1, 0, 4]
+                }, {
+                    name: 'John',
+                    data: [5, 7, 3]
+                }]
+            });
+        });
+    </script>
 
 </body>
 
